@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for platform for selling electricity tokens",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nshimiyeemmy/emmynshimiye.git"
+  },
+  "author": "nshimiyeemmy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nshimiyeemmy/emmynshimiye/issues"
+  },
+  "homepage": "https://github.com/nshimiyeemmy/emmynshimiye#readme"
+}
