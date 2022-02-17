@@ -7,7 +7,6 @@ const User = require('../models/users')
 const meterNumber = require('../models/meterNumber')
 const bcrypt = require('bcrypt')
 
-
 describe('new user', () => {
     beforeEach(async () => {
         await User.deleteMany({})
