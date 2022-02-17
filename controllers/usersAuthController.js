@@ -14,6 +14,7 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
         lastname:req.body.lastname,
         email:req.body.email, 
         hashedPassword: bcrypt.hashSync(req.body.password,10),
+        isAdmin:req.body.isAdmin
     })
     user = await user.save();
       res.status(200).json({
