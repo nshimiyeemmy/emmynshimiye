@@ -11,11 +11,21 @@
     "mongoose": "^6.2.0",
     "validator": "^13.7.0"
   },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "scripts": {
     "start": "node backend/server.js",
     "dev": "SET NODE_ENV=DEVELOPMENT & nodemon backend/server",
     "prod": "SET NODE_ENV=PRODUCTION & nodemon backend/server",
-    "seeder": "node back_end/utils/seeding.js"
+    "seeder": "node back_end/utils/seeding.js",
+    "test": "jest --verbose --runInBand -- electricity_bill_api",
+    "start:test": "nodemon server.js"
   },
   "repository": {
     "type": "git",

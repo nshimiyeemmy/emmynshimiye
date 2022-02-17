@@ -14,11 +14,13 @@ app.use(authJWT());
 //Importing all the routes
 
 const users = require('./routes/userAuth');
-const categories = require('./routes/categories')
+const meters = require('./routes/meterNumber')
 
 //doing routing
 
 app.use('/api/v1', users);
+app.use('/api/v1', meters);
+
 
 
 //Implementing the middleware to handle errors
