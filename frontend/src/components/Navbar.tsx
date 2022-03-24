@@ -4,11 +4,10 @@ import { Link, useLocation } from "react-router-dom";
 export default function Navbar() {
   const location = useLocation();
   const links = [
-    { text: "Buy electricity", to: "/buy" },
-    { text: "Load token", to: "/load" },
-    { text: "Check balance", to: "/balance" },
+    { text: "BUY ELECTRICITY", to: "/buy" },
+    { text: "LOAD TOKEN", to: "/load" },
+    { text: "CHECK BALANCE ", to: "/balance" },
   ];
-
   return (
     <div className="bg-blue-800 text-white py-4 px-6 md:px-14 xl:px-20 flex justify-between">
       <Link to={"/"}>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Footer from '../components/Footer'
 
 export default function Balance() {
   const [values, setvalues] = useState({
@@ -9,7 +9,6 @@ export default function Balance() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
-
   return (
     <div>
       <div className="w-full formInfo mx-auto max-w-lg p-20 mt-20 my-10">
@@ -27,7 +26,7 @@ export default function Balance() {
               onChange={(e) => setvalues({ ...values, meter: e.target.value })}
               type="number"
               placeholder="Enter meter number here"
-              className="focus:outline-none text-base block w-full px-4 py-3 mt-2 focus:border-blue-400 border-2"
+              className="focus:outline-none text-base block w-full px-4 py-3 mt-2 border-b-blue-800 focus:border-blue-400 border-2"
             />
           </div>
           <div className="py-4">
@@ -35,11 +34,12 @@ export default function Balance() {
               type="submit"
               className="py-3 px-10 bg-blue-800 text-white hover:bg-blue-900"
             >
-              Check balance
+              Submit
             </button>
           </div>
         </form>
       </div>
+  <Footer/>
     </div>
   );
 }

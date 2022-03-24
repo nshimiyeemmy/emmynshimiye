@@ -26,7 +26,7 @@ export default function Load() {
               onChange={(e) => setvalues({ ...values, token: e.target.value })}
               type="number"
               placeholder="Enter token"
-              className="focus:outline-none text-base block w-full px-4 py-3 mt-2 focus:border-blue-400 border-2"
+              className="focus:outline-none text-base block w-full px-4 py-3 mt-2 border-b-blue-800 focus:border-blue-400 border-2"
             />
           </div>
           <div className="py-4">

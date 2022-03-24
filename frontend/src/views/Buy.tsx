@@ -11,8 +11,9 @@ export default function Buy() {
   };
 
   return (
+    
     <div>
-      <div className="w-full formInfo mx-auto max-w-lg p-20 mt-20 my-10">
+      <div className="w-full mx-auto max-w-lg mb-40 p-20 mt-20 my-10">
         <div className="pb-8">
           <h2 className="text-3xl">Purchase electricity</h2>
         </div>
@@ -27,7 +28,7 @@ export default function Buy() {
               onChange={(e) => setvalues({ ...values, meter: e.target.value })}
               type="number"
               placeholder="Meter number"
-              className="focus:outline-none text-base block w-full px-4 py-3 mt-2 focus:border-blue-500 rounded border-2"
+              className="focus:outline-none text-base block w-full px-4 py-3 mt-2 border-b-blue-800 focus:border-blue-500 rounded border-2"
             />
           </div>
           <div className="py-2">
@@ -42,7 +43,7 @@ export default function Buy() {
               }
               type="number"
               placeholder="Enter amount here"
-              className="focus:outline-none text-base block w-full px-4 py-3 mt-2 focus:border-blue-400 border-2"
+              className="focus:outline-none text-base block w-full px-4 py-3 mt-2 border-b-blue-800 focus:border-blue-400 border-2"
             />
           </div>
           <div className="py-4">
@@ -55,6 +56,10 @@ export default function Buy() {
           </div>
         </form>
       </div>
+      <div className="bg-blue-800 mt-40 text-white py-4 px-6">
+    <p className="text-2xl text-sm text-center">Developed by @Emmy Nshimiye - All rights reserved C2022</p>
+</div>
     </div>
+    
   );
 }

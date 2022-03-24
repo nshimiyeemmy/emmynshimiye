@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:16
 #specifying the working directory
 WORKDIR /usr/app
 #copy package.json to the working directory
